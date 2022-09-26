@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inside the Bank</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl	text-center my-6 ">Inside The <span class="text-violet-700">Bapper Bank!!!</span></h1>
+    </header>
+    <main>
+        <section class="w-9/12 mx-auto mt-12">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-cyan-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">withdrawl</h4>
+                    <h2 class="text-5xl">$<span id="withdrwal-amount">00</span></h2>
+                </div>
+                <div class="bg-pink-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">Blance</h4>
+                    <h2 class="text-5xl">$<span id="blance">1240</span></h2>
+                </div>
+              </div>
+        </section>
+        <section class="w-9/12 mx-auto mt-12">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-orange-400 px-6 py-8 rounded-lg">
+                    <h1 class="mb-2 text-semibold text-3xl text-white">Deposit Amount</h1>
+                    <input class="px-3 py-1 block w-9/12" type="text" id="input-field" placeholder="Deposit Amount">
+                    <button id="btn-deposit" class="mt-3 bg-purple-600 bold-semibold text-2xl rounded-lg px-6 py-2 text-white">Deposit</button>
+                </div>
+                <div class="mb-2 px-6 py-8 bg-cyan-400 rounded-lg">
+                    <h1 class="mb-2 text-semibold text-3xl text-white">withdrawal</h1>
+                    <input class="px-3 py-1 block w-9/12" type="text" id="withdraw-field" placeholder="withdrawl Amount">
+                    <button id="btn-withdra" class="mt-3 bg-purple-600 bold-semibold text-2xl rounded-lg px-6 py-2 text-white">Withdra</button>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="js/blance.js"></script>
+</body>
+</html>
